@@ -99,12 +99,8 @@ a{
 .top-header-phone i{
     display: none;
 }
-@media only screen and (max-width: 768px){
-    #top-header{
-        display: none;
-    }
-}
-@media only screen and (max-width: 425px){
+
+@media only screen and (max-width: 430px){
     #top-header{
         display: none;
     }
@@ -156,7 +152,7 @@ h5 a{
 #hamburger-bar{
     display: none;
 }
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 775px){
     #bottom-header{
         display: flex;
         flex-direction: column;
@@ -173,6 +169,7 @@ h5 a{
     }
     .main-navbar div,
     .main-navbar h5{
+        color: black;
         margin: 10px 0rem;
     }
     .head-dropdown:hover .dp-about{
@@ -181,22 +178,20 @@ h5 a{
 }
 
 /*MAIN SECTION */
-
+main{
+    max-width: 1300px;
+}
 .main-section{
     display: flex;
     width: 100%;
-    max-width: 1300px;
-    margin: auto;
     min-height: 500px;
     position: relative;
 }
-.slide img{
-    width: 100%;
-}
+
 .slides-one{
     display: flex;
     align-items: center;
-    background-color: rgb(26, 78, 44);
+    background-image: url(../resources/img/home-1.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -216,7 +211,7 @@ h5 a{
 .slides-two{
     display: flex;
     align-items: center;
-    background-color: orange;
+    background-image: url(../resources/img/home-1.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -224,7 +219,7 @@ h5 a{
 .slides-three{
     display: flex;
     align-items: center;
-    background-color: rgb(255, 0, 157);
+    background-image: url(../resources/img/home-1.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -235,6 +230,7 @@ h5 a{
     font-size: 3rem;
 }
 .slide{
+    width: 100%; /*ubah*/
     display: none;
 }
 .fade {
@@ -253,6 +249,43 @@ h5 a{
     from {opacity: .4}
     to {opacity: 1}
   }
+
+ 
+  @media only screen and (max-width: 770px){
+      .slide-text h1{
+          font-size: 2.3rem;
+      }
+      #sukatani{
+          display: none;
+      }
+      #mn-navbar{
+          justify-content: center;
+      }
+      #top-header{
+          display: none;
+      }
+      .slide-text h5{
+        color: white;
+        margin-left: 1rem; 
+        max-width: 70%;
+    }
+    #sukatani{
+        display: flex !important;
+        align-self: center;
+        justify-self: flex-start;
+        display: flex;
+        position: absolute;
+    }
+
+  }
+  @media only screen and (max-width: 430px) {
+    #bottom-header #sukatani{
+        display: none;
+    }
+    .slide-text h1{
+        font-size: 1.5rem;
+    }
+}
 /* FOOTER */
 footer{
     height: 500vh;

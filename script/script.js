@@ -12,7 +12,7 @@ hamburgerMenu.addEventListener('click', () => {
 
 let textH5 = document.getElementsByClassName('text-h5')
 
-if(window.screen.width < 768)
+if(window.screen.width < 769)
 for(let i = 0; i < textH5.length; i++){
     textH5[i].addEventListener('click', () => {
         mainNavbar.style.display = 'none'
