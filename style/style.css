@@ -24,6 +24,7 @@ html, body{
 }
 body{
     display: flex;
+    position: relative;
     flex-direction: column;
     align-items: center;
     
@@ -57,6 +58,7 @@ a{
     display: flex;
     max-width: 1300px;
     width: 100%;
+    margin: auto;
 }
 /* TOP HEADER */
 #top-header{
@@ -91,16 +93,89 @@ a{
     align-items: center;
     color: white;
 }
+/* HIDE HAMBURGER BAR*/
+.top-header-phone i{
+    display: none;
+}
 @media only screen and (max-width: 768px){
-    .header{
-        max-width: 768px;
-    }
     #top-header{
-        justify-content: center;
+        display: none;
     }
 }
 @media only screen and (max-width: 425px){
     #top-header{
         display: none;
     }
+}
+
+/* BOTTOM HEADER*/
+#bottom-header{
+    background-color: #212121;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1.5rem;
+    position: sticky;
+    top: 0;
+    flex-wrap: wrap;
+}
+#mn-navbar{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.main-navbar div,
+.main-navbar h5{
+    margin: 5px 1rem;
+}
+h5 a{
+    color: white;
+}
+.dp-about{
+    color: black;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgb(213, 213, 213);
+    position: absolute;
+    display: none;
+}
+.dp-about-txt{
+    padding: .5rem 0;
+    border-bottom: 1px solid grey;
+}
+.head-dropdown:hover .dp-about{
+    display: block;
+}
+
+#hamburger-bar{
+    display: none;
+}
+@media only screen and (max-width: 768px){
+    #bottom-header{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    #mn-navbar{
+        display: none;
+        flex-direction: column;
+        align-items: flex-end;
+        padding: 1rem 0;
+    }
+    #hamburger-bar{
+        display: flex;
+    }
+    .main-navbar div,
+    .main-navbar h5{
+        margin: 10px 0rem;
+    }
+    .head-dropdown:hover .dp-about{
+        display: none;
+    }
+}
+/* FOOTER */
+footer{
+    height: 200vh;
 }
