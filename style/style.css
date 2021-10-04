@@ -4,7 +4,7 @@
 }
 @font-face {
     font-family: 'Poppins-Bold';
-    src: url(../resources/fonts/Poppins-Bold.ttf);
+    src: url(../resources/fonts/Poppins-Medium.ttf);
 }
 @font-face {
     font-family: 'Poppins-ExtraBold';
@@ -44,6 +44,8 @@ h3{
 h5{
     font-family: 'Poppins-Bold';
     letter-spacing: 1px;
+    font-size: .8rem;
+    font-weight: normal;
 }
 p{
     font-family: 'Poppins-Regular';
@@ -62,7 +64,7 @@ a{
 }
 /* TOP HEADER */
 #top-header{
-    background-color: #32502E;
+    background-color: #1a3d25;
     justify-content: flex-end;
     padding: 10px;
     align-items: center;
@@ -110,16 +112,18 @@ a{
 
 /* BOTTOM HEADER*/
 #bottom-header{
-    background-color: #212121;
-    color: white;
+    z-index: 99;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
-    padding: 1.5rem;
+    padding: .7rem 1.5rem;
     position: sticky;
     top: 0;
     flex-wrap: wrap;
 }
+
 #mn-navbar{
     display: flex;
     justify-content: flex-end;
@@ -130,7 +134,7 @@ a{
     margin: 5px 1rem;
 }
 h5 a{
-    color: white;
+    color: rgb(0, 0, 0);
 }
 .dp-about{
     color: black;
@@ -175,6 +179,80 @@ h5 a{
         display: none;
     }
 }
+
+/*MAIN SECTION */
+
+.main-section{
+    display: flex;
+    width: 100%;
+    max-width: 1300px;
+    margin: auto;
+    min-height: 500px;
+    position: relative;
+}
+.slide img{
+    width: 100%;
+}
+.slides-one{
+    display: flex;
+    align-items: center;
+    background-color: rgb(26, 78, 44);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.slide-text h1{
+    margin-left: 1rem; 
+    max-width: 70%;
+    color: white;
+}
+.slide-text h5{
+    color: white;
+    margin-left: 1rem; 
+    max-width: 40%;
+}
+
+
+.slides-two{
+    display: flex;
+    align-items: center;
+    background-color: orange;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.slides-three{
+    display: flex;
+    align-items: center;
+    background-color: rgb(255, 0, 157);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.fa-chevron-right,
+.fa-chevron-left{
+    font-size: 3rem;
+}
+.slide{
+    display: none;
+}
+.fade {
+    -webkit-animation-name: fade;
+    animation-name: fade;
+    animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+  }
+  
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
 /* FOOTER */
 footer{
     height: 500vh;

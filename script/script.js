@@ -18,3 +18,23 @@ for(let i = 0; i < textH5.length; i++){
         mainNavbar.style.display = 'none'
     })
 }
+
+let imageIndex = 0;
+
+function showSlideshow(){
+    let slide = document.getElementsByClassName('slide')
+    for(let i = 0; i < slide.length; i++){
+        slide[i].style.display = 'none'
+    }
+    //increment for update the slideshow index
+    imageIndex++;
+    if(imageIndex > slide.length){
+        imageIndex = 1;
+    }
+    /*if we don't increment the imageindex
+    it always be 0 and will not update the slideshow */
+    slide[imageIndex-1].style.display = 'flex';
+    setTimeout(showSlideshow, 7000)
+}
+
+showSlideshow();
