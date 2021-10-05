@@ -293,6 +293,7 @@ main{
 
 /* ABOUT COMPANY */
 .about-company-container{
+    padding: 5rem 0;
     display: grid;
     margin-top: 2rem;
     display: grid;
