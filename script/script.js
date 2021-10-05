@@ -38,3 +38,30 @@ function showSlideshow(){
 }
 
 showSlideshow();
+
+let bottomHeader = document.getElementById('bottom-header')
+let scrollColor = document.getElementsByClassName('scroll-color')
+let sukataniText = document.getElementById('sukatani')
+
+window.onscroll = () => {
+    if(document.documentElement.scrollTop > 80){
+        bottomHeader.style.background = 'rgb(87, 106, 81)'
+        bottomHeader.style.transition = '.3s'
+        for(let i = 0; i < scrollColor.length; i++){
+            scrollColor[i].style.color = 'white'
+            scrollColor[i].style.transition = '.3s'
+        }
+        sukataniText.style.color = 'white';
+        sukataniText.style.transition = '.3s'
+    }
+    else{
+        bottomHeader.style.background = ''
+        bottomHeader.style.transition = '.3s'
+        for(let i = 0; i < scrollColor.length; i++){
+            scrollColor[i].style.color = ''
+            scrollColor[i].style.transition = '.3s'
+        }
+        sukataniText.style.color = '';
+        sukataniText.style.transition = '.3s'
+    }
+}

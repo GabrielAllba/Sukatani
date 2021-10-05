@@ -1,18 +1,18 @@
 @font-face {
-    font-family:'Poppins-Regular';
-    src: url(../resources/fonts/Poppins-Regular.ttf);
+    font-family:'Montserrat-Regular';
+    src: url(../resources/fonts/Montserrat-Regular.ttf);
 }
 @font-face {
-    font-family: 'Poppins-Bold';
-    src: url(../resources/fonts/Poppins-Medium.ttf);
+    font-family: 'Montserrat-Bold';
+    src: url(../resources/fonts/Montserrat-Medium.ttf);
 }
 @font-face {
-    font-family: 'Poppins-ExtraBold';
-    src: url(../resources/fonts/Poppins-ExtraBold.ttf);
+    font-family: 'Montserrat-ExtraBold';
+    src: url(../resources/fonts/Montserrat-Bold.ttf);
 }
 @font-face {
-    font-family: 'Ultra-Regular';
-    src: url(../resources/fonts/Ultra-Regular.ttf);
+    font-family: 'Montserrat-Regular';
+    src: url(../resources/fonts/Montserrat-Light.ttf);
 }
 *{
     box-sizing: border-box;
@@ -27,29 +27,30 @@ body{
     position: relative;
     flex-direction: column;
     align-items: center;
+    flex-wrap: wrap;
     
 }
 h1{
-    font-family: 'Poppins-ExtraBold', sans-serif;
+    font-family: 'Montserrat-ExtraBold', sans-serif;
     font-size: 4rem;
 }
 h2{
-    font-family: 'Poppins-Bold';
-    font-size: 3rem;
+    font-family: 'Montserrat-Bold';
+    font-size: 2.5rem;
 }
 h3{
-    font-family: 'Poppins-Bold';
-    font-size: 2rem;
+    font-family: 'Montserrat-Bold';
+    font-size: 1.5rem;
 }
 h5{
-    font-family: 'Poppins-Bold';
+    font-family: 'Montserrat-Bold';
     letter-spacing: 1px;
     font-size: .8rem;
     font-weight: normal;
 }
 p{
-    font-family: 'Poppins-Regular';
-    font-size: .7rem;
+    font-family: 'Montserrat-Regular';
+    font-size: 1rem;
 }
 a{
     text-decoration: none;
@@ -64,7 +65,8 @@ a{
 }
 /* TOP HEADER */
 #top-header{
-    background-color: #1a3d25;
+    background-color: rgb(87, 106, 81);
+    ;
     justify-content: flex-end;
     padding: 10px;
     align-items: center;
@@ -109,8 +111,7 @@ a{
 /* BOTTOM HEADER*/
 #bottom-header{
     z-index: 99;
-    background-color: #ffffff;
-    color: rgb(0, 0, 0);
+    background-color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -152,6 +153,9 @@ h5 a{
 #hamburger-bar{
     display: none;
 }
+a{
+    cursor: pointer;
+}
 @media only screen and (max-width: 775px){
     #bottom-header{
         display: flex;
@@ -184,7 +188,7 @@ main{
 .main-section{
     display: flex;
     width: 100%;
-    min-height: 500px;
+    min-height: 550px;
     position: relative;
 }
 
@@ -286,7 +290,79 @@ main{
         font-size: 1.5rem;
     }
 }
-/* FOOTER */
+
+/* ABOUT COMPANY */
+.about-company-container{
+    display: grid;
+    margin-top: 2rem;
+    display: grid;
+    width: 100%;
+    max-width: 1300px;
+    min-height: 500px;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: 5rem repeat(2, 3rem) repeat(6, 5.5rem);
+}
+#tentang-kami{
+    text-align: left;
+    grid-area: 1 / 1 / 2 / 13;
+    padding-left: 1rem;
+}
+.about-us-top{
+    grid-area: 2 / 1 / span 2 / 13;
+    text-align: center;
+}
+.about-us-bottom{
+    grid-area: 4 / 1 / span 6 / 7;
+}
+
+#picture-one{
+    grid-area: 4 / 7 / 6 / 10;
+}
+#picture-two{
+    grid-area: 6 / 10 / span 1 / 13;
+}
+#picture-one, 
+#picture-two{
+    width: 85%;
+    height: auto;
+}
+.about-us-bottom{
+    padding: 0 1.5rem;
+}
+.about-us-bottom h3{
+    max-width: 85%
+}
+.about-us-bottom #about-dsc{
+    max-width: 80%;
+    margin-top: 1rem;
+    text-align: justify;
+    font-size: 1rem;
+}
+.button{
+    background-color: rgb(108, 164, 93);
+    width: 10rem;
+    padding: 1rem;
+    margin: 1rem 0;
+    text-align: center;
+    border-radius: 40px;
+    position: relative;
+    cursor: pointer;
+    transition: .3s;
+}
+.button h5 a{
+    color: white;
+    text-align: center;
+    transition: .3s;
+}
+.button:hover h5 a{
+    color: black;
+    transition: .3s;
+}
+.button:hover{
+    transform: scale(1.1);
+    transition: .3s;
+}
+
 footer{
     height: 500vh;
 }
