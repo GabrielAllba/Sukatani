@@ -53,6 +53,8 @@ window.onscroll = () => {
         }
         sukataniText.style.color = 'white';
         sukataniText.style.transition = '.3s'
+        hamburgerMenu.style.color = 'white'
+        sukataniText.style.transition = '.3s'
     }
     else{
         bottomHeader.style.background = ''
@@ -62,6 +64,8 @@ window.onscroll = () => {
             scrollColor[i].style.transition = '.3s'
         }
         sukataniText.style.color = '';
+        sukataniText.style.transition = '.3s'
+        hamburgerMenu.style.color = ''
         sukataniText.style.transition = '.3s'
     }
 }
