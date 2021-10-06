@@ -673,8 +673,31 @@ main{
 .explore-prd a{
     color: rgb(110, 174, 128);
     font-size: 2rem;
+    transition: .3s;
 }
-
+.explore-prd a:hover{
+    color: white;
+    transition: .3s;
+}
+.explore-more-product{
+    margin: 5rem 0;
+    text-align: center;
+    background-color: white;
+}
+.explore-more-product h3 a{
+    font-size: .7rem;
+    color: rgb(90, 187, 110);
+    border: 1px solid rgb(90, 187, 110);
+    padding: 1rem;
+    letter-spacing: 2px;
+    text-align: center;
+    transition: .3s;
+}
+.explore-more-product h3 a:hover{
+    background-color: rgb(90, 187, 110);
+    color: white;
+    transition: .3s;
+}
 @media only screen and (max-width: 770px) {
     .product-list-container{
         max-width: 40%;
