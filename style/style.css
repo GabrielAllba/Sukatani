@@ -825,6 +825,8 @@ main{
     opacity: 1;
 }
 .read-more-button h5{
+    width: 10rem;
+    text-align: center;
     background-color: white;
     padding: 1rem;
     transition: .2s;
