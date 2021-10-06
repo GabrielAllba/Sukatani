@@ -65,7 +65,7 @@ a{
 }
 /* TOP HEADER */
 #top-header{
-    background-color: rgb(108, 164, 93);
+    background-color: #1c3724;
     justify-content: flex-end;
     padding: 10px;
     align-items: center;
@@ -202,6 +202,13 @@ main{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+}
+.slide-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.442);
 }
 .slide-text h1{
     margin-left: 1rem; 
@@ -589,7 +596,8 @@ main{
     text-align: center;
     bottom: 0;
     width: 100%;
-    background-color: rgba(236, 236, 236, 0.884);
+    border: 1px solid rgb(113, 113, 113);
+    background-color: rgb(255, 255, 255);
 }
 .founder-text h5{
     font-size: .9rem;
@@ -660,18 +668,18 @@ main{
     height: 20%;
     padding: 1rem;
     color: rgb(255, 255, 255);
-    background-color: rgb(37, 37, 37);
+    background-color: rgb(41, 41, 41);
 }
 .product-desc h3{
     font-size: 1rem;
-    margin-right: 2rem;
+    margin-right: 1rem;
 }
 .product-container img{
     width: 100%;
     height: 80%;
 }
 .explore-prd a{
-    color: rgb(110, 174, 128);
+    color: #a1c227;
     font-size: 2rem;
     transition: .3s;
 }
@@ -686,15 +694,15 @@ main{
 }
 .explore-more-product h3 a{
     font-size: .7rem;
-    color: rgb(90, 187, 110);
-    border: 1px solid rgb(90, 187, 110);
+    color: #91ae2b;
+    border: 1px solid #91ae2b;
     padding: 1rem;
     letter-spacing: 2px;
     text-align: center;
     transition: .3s;
 }
 .explore-more-product h3 a:hover{
-    background-color: rgb(90, 187, 110);
+    background-color: #91ae2b;
     color: white;
     transition: .3s;
 }
@@ -724,6 +732,157 @@ main{
     }
 }
 
+/* RENT FARMER*/
+.rent-farmer{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 500px;
+}
+.rent-title{
+    display: flex;
+    align-items: center;
+    height: 30%;
+}
+.rent-description{
+    padding-top: 2rem;
+    display: flex;
+}
+.rent-image{
+    position: relative;
+    width: 30%;
+}
+.rent-dsc{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1rem;
+    background-color: #1c3724;
+    color: white;
+    width: 30%;
+}
+.rent-list{
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    width: 40%;
+}
+.service{
+    border: 1px solid #aecd3e;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 49%;
+    margin: 1px;
+}
+.rent-image img{
+    width: 100%;
+    height: 100%;
+}
+.service i {
+    color: #aecd3e;
+    font-size: 2rem;
+}
+.service p{
+    margin: 10px 0;
+    font-size: 1.2rem;
+    font-family: 'Montserrat-Bold';
+    letter-spacing: 2px;
+}
+.rent-image h5{
+    position: absolute;
+    top: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.571);
+    transition: .3s;
+}
+.rent-image h5 a{
+    font-size: 1rem;
+    background-color: #91ae2b;
+    padding: 1rem;
+    color: white;
+    opacity: 0;
+    transition: .3s;
+}
+.rent-image h5 a:hover{
+    background-color: white;
+    color: #91ae2b;
+    transition: .3s;
+}
+.rent-image h5:hover{
+    background-color: rgba(0, 0, 0, 0);
+    transition: .3s;
+}
+.rent-image h5:hover a{
+    opacity: 1;
+}
+.read-more-button h5{
+    background-color: white;
+    padding: 1rem;
+    transition: .2s;
+}
+.read-more-button h5 a{
+    color: #a1c227;
+    transition: .2s;
+}
+.read-more-button h5:hover{
+    background-color: #a1c227;
+    transition: .2s;
+}
+.read-more-button h5:hover a{
+    color: white;
+    transition: .2s;
+}
+@media only screen and (max-width: 770px) {
+    .rent-description{
+        flex-direction: column;
+        align-items: center;
+    }
+    .rent-dsc{
+        width: 90%;
+        align-items: center;
+        min-height: 300px;
+    }
+
+    .rent-list{
+        width: 100%;
+        justify-content: center;
+    }
+    .service{
+        width: 40%;
+        margin: 5px;
+        height: 10rem;
+    }
+    .rent-image{
+        display: none;
+    }
+    .service p{
+        font-size: .8rem;
+    }
+    .rent-title{
+        justify-content: center;
+    }
+    .rent-title h2{
+        text-align: center;
+        font-size: 1.8rem;
+    }
+    .rent-dsc-description p{
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 330px) {
+    .service p{
+        font-size: .6rem;
+    }
+}
 /* FOOTER */
 footer{
     height: 500vh;
