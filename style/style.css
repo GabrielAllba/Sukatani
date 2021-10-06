@@ -184,6 +184,9 @@ a{
 /*MAIN SECTION */
 main{
     max-width: 1300px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 .main-section{
     display: flex;
@@ -380,8 +383,8 @@ main{
         font-size: 1rem;
     }
     .about-us-top p{
-        padding-top: 1rem;
-        font-size: 1rem;
+        padding: 1rem;
+        font-size: .7rem;
     }
     .about-us-bottom{
         text-align: center;
@@ -400,16 +403,16 @@ main{
         font-size: 1rem;
     }
     p#about-dsc{
-        font-size: 1rem !important;
+        font-size: .7rem !important;
     }
     
     #picture-one{
-        padding-top: 2rem; 
-        grid-area: 8 / 2 / 10 / 7;
+        padding-top: 0rem; 
+        grid-area: 6 / 3 / 10 / 8;
     }
     #picture-two{
-        padding-top: 2rem; 
-        grid-area: 8 / 8 / 10 / 13;
+        padding-top: 0rem; 
+        grid-area: 6 / 8 / 10 / 13;
     }
     .about-us-bottom .button{
         padding: .5rem;
@@ -417,11 +420,30 @@ main{
     }
     #picture-one, 
     #picture-two{
-        width: 80%;
+        width: 70%;
         height: auto;
 }
 }
-
+@media only screen and (max-width: 430px){
+    #picture-one{
+        padding-top: 0rem; 
+        grid-area: 7 / 3 / 10 / 8;
+    }
+    #picture-two{
+        padding-top: 0rem; 
+        grid-area: 7 / 8 / 10 / 13;
+    }
+}
+@media only screen and (max-width: 330px) {
+    #picture-one{
+        padding-top: 0rem; 
+        grid-area: 8 / 3 / 10 / 8;
+    }
+    #picture-two{
+        padding-top: 0rem; 
+        grid-area: 8 / 8 / 10 / 13;
+    }
+}
 
 /* VISI MISI */
 .visi-misi{
@@ -429,11 +451,11 @@ main{
     flex-direction: column;
     padding-left: 1rem;
     flex-wrap: wrap;
-    padding-top: 5rem;
+    padding-top: 0rem;
+    min-height: 500px;
 }
 
 .visi-misi-content{
-    flex-wrap: wrap;
     display: flex;
     padding: 4rem 0 ;
 }
@@ -443,8 +465,11 @@ main{
     text-align: justify;
 }
 .visi{
+    display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     padding-left: 8rem;
+    width: 80%;
 }
 .misi{
     display: flex;
@@ -459,6 +484,13 @@ main{
     max-width: 75%;
     text-align: justify;
 }
+.visi-picture{
+    max-width: 80%;
+}
+.visi-picture img{
+    width: 100%;
+}
+
 @media only screen and (max-width : 770px){
     .visi-misi-title h2{
         text-align: center;
@@ -473,20 +505,27 @@ main{
     }
     .visi{
         flex-wrap: wrap;
+        align-items: center;
         padding-left: 0;
         text-align: center;
     }
     .visi-desc p{
         text-align: center;
         max-width: 100%;
+        font-size: .7rem;
+    }
+    .visi-picture img{
+        width: 50%;
     }
     .misi{
+        padding-top: 1rem;
         display: flex;
         align-items: center;
     }
     .misi-dsc p{
         max-width: 100%;
-        padding: 1rem;
+        padding: 0 1rem;
+        font-size: .7rem;
         text-align: center;
     }
 }
