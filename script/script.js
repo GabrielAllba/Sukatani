@@ -45,7 +45,7 @@ let sukataniText = document.getElementById('sukatani')
 
 window.onscroll = () => {
     if(document.documentElement.scrollTop > 80){
-        bottomHeader.style.background = 'rgb(87, 106, 81)'
+        bottomHeader.style.background = 'rgb(108, 164, 93)';
         bottomHeader.style.transition = '.3s'
         for(let i = 0; i < scrollColor.length; i++){
             scrollColor[i].style.color = 'white'
