@@ -431,11 +431,11 @@ main{
 }
 @media only screen and (max-width: 430px){
     #picture-one{
-        padding-top: 0rem; 
+        padding-top: 2rem; 
         grid-area: 8 / 3 / 10 / 8;
     }
     #picture-two{
-        padding-top: 0rem; 
+        padding-top: 2rem; 
         grid-area: 8 / 8 / 10 / 13;
     }
 }
@@ -547,15 +547,12 @@ main{
         text-align: center;
     }
     .founder-desc p{
-        font-size: .8rem;
+        font-size: 1rem;
     }
 }
 @media only screen and (max-width: 430px) {
     .visi-picture img{
         width: 70%;
-    }
-    .misi-dsc p{
-        font-size: .8rem;
     }
 }
 
@@ -581,7 +578,7 @@ main{
     display: flex;
     flex-direction: column;
     position: relative;
-    width: 28%;
+    width: 20%;
     margin: 0 1rem;
 }
 .founder-p img{
@@ -656,7 +653,7 @@ main{
     flex-wrap: wrap;
 }
 .product-list-container{
-    max-width: 25%;
+    max-width: 20%;
     position: relative;
     margin: 5px;
 }
@@ -708,12 +705,13 @@ main{
 }
 @media only screen and (max-width: 770px) {
     .product-list-container{
-        max-width: 40%;
+        max-width: 20%;
     }
+  
 }
 @media only screen and (max-width: 430px){
     .product-list-container{
-        max-width: 70%;
+        max-width: 50%;
     }
     .buy-title{
         justify-content: center;
@@ -851,7 +849,7 @@ main{
     .rent-dsc{
         width: 90%;
         align-items: center;
-        min-height: 300px;
+        min-height: 500px;
     }
 
     .rent-list{
@@ -871,6 +869,9 @@ main{
     }
     .rent-title{
         justify-content: center;
+    }
+    .rent-dsc-title{
+        text-align: center;
     }
     .rent-title h2{
         text-align: center;
