@@ -966,7 +966,7 @@ textarea{
     color: #91ae2b;
 }
 
-@media only screen and (max-width: 770px){
+@media only screen and (max-width: 770px) {
     .contact-desc-ds{
         flex-direction: column;
     }
@@ -984,7 +984,7 @@ textarea{
         background-color: #00000072;
     }
     .form{
-        background-color: #0f0f0fdb;
+        background-color: #00000072;
     }
     .cs-desc h3{
         text-align: center;
@@ -996,8 +996,56 @@ textarea{
         justify-content: center;
     }
 }
+@media only screen and (max-width: 430px){
+    .cs-desc{
+        background-color: #00000072;
+    }
+    .form{
+        background-color: #0f0f0fdb;
+    }
+    
+}
 
 /* FOOTER */
 footer{
-    height: 200px;
+   min-height: 200px;
+   display: flex;
+   justify-content: space-evenly;
+   color: white;
+   max-width: 1300px;
+   width: 100%;
+   background-color: #171717;
+   align-items: center;
+}
+footer h5{
+    font-size: 1.2rem;
+}
+.foot-title h2,
+.foot-title h3{
+    letter-spacing: 3px;
+    font-size: 1.5rem;
+}
+.foot-title p{
+    max-width: 50%;
+    margin: 5px 0;
+    font-size: .8rem;
+    color: rgb(202, 202, 202);
+}
+.foot-title{
+    width: 25%;
+}
+footer div ul li a{
+    font-family: 'Montserrat-Bold';
+    color: rgb(194, 194, 194);
+    font-size: .8rem;
+}
+footer div ul{
+    padding-top: .5rem;
+}
+ul li{
+    display: block;
+    margin: 5px 0;
+}
+footer div ul li a:hover{
+    color: #a1c227;
 }
