@@ -1049,3 +1049,22 @@ ul li{
 footer div ul li a:hover{
     color: #a1c227;
 }
+@media only screen and (max-width: 770px) {
+    footer{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .foot-title{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 70%;
+    }
+    .foot-title p{
+        max-width: 100%;
+    }
+    footer div{
+        margin: 1rem;
+    }
+}
