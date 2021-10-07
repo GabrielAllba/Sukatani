@@ -65,7 +65,7 @@ a{
 }
 /* TOP HEADER */
 #top-header{
-    background-color: #1c3724;
+    background-color: #588157;
     justify-content: flex-end;
     padding: 10px;
     align-items: center;
@@ -198,7 +198,7 @@ main{
 .slides-one{
     display: flex;
     align-items: center;
-    background-image: url(../resources/img/home-1.jpg);
+    background-color: #588157;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -215,7 +215,7 @@ main{
     max-width: 70%;
     color: white;
 }
-.slide-text h5{
+.slide-text p{
     color: white;
     margin-left: 1rem; 
     max-width: 40%;
@@ -225,7 +225,7 @@ main{
 .slides-two{
     display: flex;
     align-items: center;
-    background-image: url(../resources/img/home-1.jpg);
+    background-color: #3a5a40;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -233,7 +233,7 @@ main{
 .slides-three{
     display: flex;
     align-items: center;
-    background-image: url(../resources/img/home-1.jpg);
+    background-color: #344e41;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -578,7 +578,7 @@ main{
     display: flex;
     flex-direction: column;
     position: relative;
-    width: 20%;
+    width: 23%;
     margin: 0 1rem;
 }
 .founder-p img{
@@ -593,15 +593,15 @@ main{
     text-align: center;
     bottom: 0;
     width: 100%;
-    border: 1px solid rgb(113, 113, 113);
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(32, 32, 32);
 }
 .founder-text h5{
     font-size: .9rem;
     margin: 7px 0;
+    color: white;
 }
-.green-text{
-    color: rgb(93, 174, 93);
+h5.green-text{
+    color: #7aac79;
 }
 @media only screen and (max-width: 770px) {
     .founder-title,
@@ -705,7 +705,7 @@ main{
 }
 @media only screen and (max-width: 770px) {
     .product-list-container{
-        max-width: 20%;
+        max-width: 40%;
     }
   
 }
@@ -886,7 +886,118 @@ main{
         font-size: .6rem;
     }
 }
+ 
+/* CONTACT SECTION */
+.contact-section{
+    margin-top: 4rem;
+    display: flex;
+    min-height: 600px;
+    flex-direction: column;
+}
+.contact-desc-ds{
+    background-image: url(../resources/img/josefin-HtCgLIDy-2U-unsplash\ \(1\).jpg);
+    background-position:left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    min-height: 600px;
+    margin-top: 2rem;
+}
+.contact-title h2{
+    padding-left: 1rem;
+
+}
+.cs-desc p{
+    padding-top: 4rem;
+}
+.cs-desc h3{
+    max-width: 50%;
+    padding-top: 3rem;
+}
+.cs-desc,
+.form{
+    width: 35%;
+    background-color: rgba(30, 30, 30, 0.87);
+    padding: 2rem;
+    color: white;
+}
+.contact-one{
+    width: 25%;
+    min-height: 100%;
+    background-color: #00000057;
+}
+.form{
+    padding-top: 5rem;
+    width: 40%;
+}
+.form span{
+    font-family: 'Montserrat-Regular';
+}
+.cs-desc{
+    background-color: #1c3724c2;
+}
+.input-box, .button-submit{
+    padding: 10px;
+}
+input,textarea{
+    background-color: rgb(50, 50, 50);
+    padding: 1rem;
+    outline: none;
+    border: none;
+    color: white;
+    width: 90%;
+    border-radius: 5px;
+    height: 20%
+}
+textarea{
+    resize: none;
+}
+.button-submit input{
+    cursor: pointer;
+    width: 10rem;
+    background-color:#91ae2b;
+    letter-spacing: 4px;
+    transition: .3s;
+}
+.button-submit input:hover{
+    transition: .3s;
+    background-color: white;
+    color: #91ae2b;
+}
+
+@media only screen and (max-width: 770px){
+    .contact-desc-ds{
+        flex-direction: column;
+    }
+    .contact-title{
+        text-align: center;
+    }
+    .cs-desc, .form{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .cs-desc{
+        background-color: #00000072;
+    }
+    .form{
+        background-color: #0f0f0fdb;
+    }
+    .cs-desc h3{
+        text-align: center;
+        max-width: 100%;
+    }
+    div.input-box,
+    div.button-submit{
+        display: flex;
+        justify-content: center;
+    }
+}
+
 /* FOOTER */
 footer{
-    height: 500vh;
+    height: 200px;
 }
