@@ -986,11 +986,12 @@ textarea{
     display: flex;
     min-height: 500px;
     padding: 0rem;
+    background-image: url(../resources/img/explore-land.jpg);
 }
 .lc-desc{
     width: 40%;
     align-items: center;
-    background-color: #1c3724;
+    background-color: #1b1b1bd8;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1013,6 +1014,19 @@ textarea{
 #explore-container{
     padding: 10px;
     background-color: white;
+    transition: .3s;
+}
+#explore-container:hover{
+    color: #aecd3e;
+    background-color: #aecd3e;
+    transition: .3s;
+}
+#explore-container a{
+    transition: .3s;
+}
+#explore-container:hover a{
+    color: #ffffff;
+    transition: .3s;
 }
 .lc-desc p a{
     color: #91ae2b;
