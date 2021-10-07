@@ -63,59 +63,15 @@ a{
     width: 100%;
     margin: auto;
 }
-/* TOP HEADER */
-#top-header{
-    background-color: #588157;
-    justify-content: flex-end;
-    padding: 10px;
-    align-items: center;
-}
-#top-header div{
-    margin: 0 1.5rem
-}
-#top-header a{
-    margin: 0 5px;
-    border-radius: 60px;
-    border: 1.3px solid white;
-    display: inline-flex;
-    padding: 8px;
-}
-#top-header a i{
-    font-size: .7rem;
-    border-radius: 50px;
-    color: white;
-}
-.ch-text p,
-.wh-text p{
-    color: rgb(226, 226, 226);
-}
-/* CONTACT HEADER*/
-.contact-header,
-.work-hour-header{
-    display: flex;
-    align-items: center;
-    color: white;
-}
-/* HIDE HAMBURGER BAR*/
-.top-header-phone i{
-    display: none;
-}
-
-@media only screen and (max-width: 430px){
-    #top-header{
-        display: none;
-    }
-}
-
 /* BOTTOM HEADER*/
 #bottom-header{
     z-index: 99;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0);
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: .7rem 1.5rem;
-    position: sticky;
+    position: fixed;
     top: 0;
     flex-wrap: wrap;
 }
@@ -130,7 +86,7 @@ a{
     margin: 5px 1rem;
 }
 h5 a{
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 .dp-about{
     color: black;
@@ -152,15 +108,24 @@ h5 a{
 
 #hamburger-bar{
     display: none;
+    font-size: 2rem;
+    color: white;
 }
 a{
     cursor: pointer;
+}
+#sukatani{
+    color: white;
+}
+.head-dropdown div h5 a{
+    color: black;
 }
 @media only screen and (max-width: 775px){
     #bottom-header{
         display: flex;
         flex-direction: column;
         align-items: flex-end;
+        background-color: #1c3724;
     }
     #mn-navbar{
         display: none;
@@ -179,6 +144,9 @@ a{
     .head-dropdown:hover .dp-about{
         display: none;
     }
+    #sukatani{
+        padding-top: 6px;
+    }
 }
 
 /*MAIN SECTION */
@@ -191,7 +159,7 @@ main{
 .main-section{
     display: flex;
     width: 100%;
-    min-height: 550px;
+    min-height: 700px;
     position: relative;
 }
 
@@ -245,8 +213,8 @@ main{
 .fade {
     -webkit-animation-name: fade;
     animation-name: fade;
-    animation-duration: 3s;
-    -webkit-animation-duration: 3s;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
   }
   
 @-webkit-keyframes fade {
@@ -269,9 +237,6 @@ main{
       }
       #mn-navbar{
           justify-content: center;
-      }
-      #top-header{
-          display: none;
       }
       .slide-text h5{
         color: white;
@@ -1002,6 +967,9 @@ textarea{
         display: flex;
         justify-content: center;
     }
+    .button-submit input{
+        width: 20rem;
+    }
 }
 @media only screen and (max-width: 430px){
     .cs-desc{
@@ -1009,6 +977,9 @@ textarea{
     }
     .form{
         background-color: #0f0f0fdb;
+    }
+    .button-submit input{
+        width: 10rem;
     }
     
 }
@@ -1031,6 +1002,9 @@ footer h5{
 .foot-title h3{
     letter-spacing: 3px;
     font-size: 1.5rem;
+}
+.foot-title h3{
+    font-size: 1rem;
 }
 .foot-title p{
     max-width: 50%;

@@ -45,27 +45,27 @@ let sukataniText = document.getElementById('sukatani')
 
 window.onscroll = () => {
     if(document.documentElement.scrollTop > 80){
-        bottomHeader.style.background = '#588157';
-        bottomHeader.style.transition = '.3s'
+        bottomHeader.style.background = '#344e41';
+        bottomHeader.style.transition = '.2s'
         for(let i = 0; i < scrollColor.length; i++){
             scrollColor[i].style.color = 'white'
-            scrollColor[i].style.transition = '.3s'
+            scrollColor[i].style.transition = '.2s'
         }
         sukataniText.style.color = 'white';
-        sukataniText.style.transition = '.3s'
+        sukataniText.style.transition = '.2s'
         hamburgerMenu.style.color = 'white'
-        sukataniText.style.transition = '.3s'
+        sukataniText.style.transition = '.2s'
     }
     else{
         bottomHeader.style.background = ''
-        bottomHeader.style.transition = '.3s'
+        bottomHeader.style.transition = '.2s'
         for(let i = 0; i < scrollColor.length; i++){
             scrollColor[i].style.color = ''
-            scrollColor[i].style.transition = '.3s'
+            scrollColor[i].style.transition = '.2s'
         }
         sukataniText.style.color = '';
-        sukataniText.style.transition = '.3s'
+        sukataniText.style.transition = '.2s'
         hamburgerMenu.style.color = ''
-        sukataniText.style.transition = '.3s'
+        sukataniText.style.transition = '.2s'
     }
 }
