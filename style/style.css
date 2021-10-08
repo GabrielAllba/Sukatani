@@ -166,7 +166,7 @@ main{
 .slides-one{
     display: flex;
     align-items: center;
-    background-color: #588157;
+    background-image: url(../resources/img/petani.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -176,6 +176,7 @@ main{
     flex-direction: column;
     justify-content: center;
     height: 100%;
+    width: 100%;
     background-color: rgba(0, 0, 0, 0.442);
 }
 .slide-text h1{
@@ -193,7 +194,7 @@ main{
 .slides-two{
     display: flex;
     align-items: center;
-    background-color: #3a5a40;
+    background-image: url(../resources/img/hasil-tani.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -201,7 +202,7 @@ main{
 .slides-three{
     display: flex;
     align-items: center;
-    background-color: #344e41;
+    background-image: url(../resources/img/home-3.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -509,6 +510,9 @@ main{
         padding-top: 1rem;
         display: flex;
         align-items: center;
+    }
+    .misi-dsc i{
+        display: none;
     }
     .misi-dsc p{
         max-width: 100%;
