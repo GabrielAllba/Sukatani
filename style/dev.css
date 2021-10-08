@@ -1,0 +1,136 @@
+@font-face {
+    font-family:'Montserrat-Regular';
+    src: url(../resources/fonts/Montserrat-Regular.ttf);
+}
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url(../resources/fonts/Montserrat-Medium.ttf);
+}
+@font-face {
+    font-family: 'Montserrat-ExtraBold';
+    src: url(../resources/fonts/Montserrat-Bold.ttf);
+}
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url(../resources/fonts/Montserrat-Light.ttf);
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color: rgb(0, 0, 0);
+}
+html, body{
+    scroll-behavior: smooth;
+}
+body{
+    text-align: center;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+}
+h1{
+    font-family: 'Montserrat-ExtraBold', sans-serif;
+    font-size: 2rem;
+}
+h2{
+    font-family: 'Montserrat-Bold';
+    font-size: 1.5rem;
+}
+h3{
+    font-family: 'Montserrat-Bold';
+    font-size: 1rem;
+}
+h5{
+    font-family: 'Montserrat-Bold';
+    letter-spacing: 1px;
+    font-size: .8rem;
+    font-weight: normal;
+}
+p{
+    font-family: 'Montserrat-Regular';
+    font-size: 1rem;
+}
+a{
+    text-decoration: none;
+}
+main,footer{
+    padding: 1rem;
+    height: 100%;
+}
+header{
+    padding: 1rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center
+}
+header h3{
+    margin: 0 5rem;
+    width: 20%;
+    letter-spacing: 5px;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main h1{
+    letter-spacing: 10px;
+    font-size: 4rem;
+}
+main div{
+    padding: .6rem 0;
+    background-color: white;
+    width: 15rem;
+    margin-top: 1rem;
+    border: 1px solid black;
+    transition: .3s;
+
+}
+.button h5 a{
+    color: black;
+    transition: .3s;
+}
+.button:hover{
+    background-color: black;
+    transition: .3s;
+}
+.button:hover  h5 a{
+    color: white;
+    transition: .3s;
+}
+footer{
+    padding-bottom: 2rem;
+}
+.social-media{
+    padding: 1rem 0;
+}
+.social-media a{
+    margin: 0 1rem;
+}
+.social-media a i{
+    font-size: 1.5rem;
+}
+.fab{
+    transition: .3s;
+}
+.fa-twitter:hover{
+    color: rgb(34, 192, 255);
+    transition: .3s;
+}
+.fa-facebook:hover{
+    color: rgb(42, 122, 226);
+    transition: .3s;
+}
+.fa-instagram:hover{
+    color: rgb(255, 0, 128);
+    transition: .3s;
+}
+.fa-linkedin-in:hover{
+    color: rgb(0, 88, 204);
+    transition: .3s;
+}
