@@ -1328,3 +1328,47 @@ footer div ul li a:hover{
     transform: translateY(-20px);
     transition: .3s;
 }
+
+@media only screen and (max-width: 770px) {
+    .live-chat{
+        position: fixed;
+        bottom: 30%;
+        right: 5%;
+        background-color: rgb(47, 88, 63);
+        width: 30%;
+        height: 50%;
+        display: none;
+        flex-direction: column;
+    }
+    .message-button i{
+        font-size: 1rem;
+        color: white;
+    }
+    .live-chat .live-chat-text{
+        height: 25%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-align: center;
+        padding: 10px;
+    }
+    .live-chat .live-chat-text p{
+        font-size: .6rem;
+    }
+    .live-chat form{
+        padding: 0;
+    }
+    .live-submit input{
+        width: 70%;
+        padding: 5px;
+        margin: 10px 0;
+       
+    }
+    
+}
+@media only screen and (max-width: 430px){
+    .live-chat{
+        width: 45%;
+    }
+}
