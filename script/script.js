@@ -42,11 +42,15 @@ showSlideshow();
 let bottomHeader = document.getElementById('bottom-header')
 let scrollColor = document.getElementsByClassName('scroll-color')
 let sukataniText = document.getElementById('sukatani')
-
+let messageButton = document.getElementsByClassName('message-button')[0]
 window.onscroll = () => {
     if(document.documentElement.scrollTop > 80){
         bottomHeader.style.background = '#344e41';
         bottomHeader.style.transition = '.2s'
+        messageButton.style.opacity = '1'
+        messageButton.style.transition = '.2s'
+        messageButton.style.bottom = '4%'
+        messageButton.style.right = '3%'
         for(let i = 0; i < scrollColor.length; i++){
             scrollColor[i].style.color = 'white'
             scrollColor[i].style.transition = '.2s'
@@ -63,9 +67,24 @@ window.onscroll = () => {
             scrollColor[i].style.color = ''
             scrollColor[i].style.transition = '.2s'
         }
+        messageButton.style.opacity = ''
+        messageButton.style.transition = ''
+        messageButton.style.bottom = ''
+        messageButton.style.right = ''
         sukataniText.style.color = '';
         sukataniText.style.transition = '.2s'
         hamburgerMenu.style.color = ''
         sukataniText.style.transition = '.2s'
     }
 }
+
+let liveChat = document.getElementById('livechat')
+
+messageButton.addEventListener('click', () => {
+    if(liveChat.style.display == 'none'){
+        liveChat.style.display = 'flex'
+    }
+    else{
+        liveChat.style.display = 'none'
+    }
+})

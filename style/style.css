@@ -895,7 +895,7 @@ h5.green-text{
     padding-top: 3rem;
 }
 .cs-desc,
-.form{
+.contact-desc-ds .form{
     width: 35%;
     background-color: rgba(30, 30, 30, 0.87);
     padding: 2rem;
@@ -906,11 +906,11 @@ h5.green-text{
     min-height: 100%;
     background-color: #00000057;
 }
-.form{
+.contact-desc-ds .form{
     padding-top: 5rem;
     width: 40%;
 }
-.form span{
+.contact-desc-ds .form span{
     font-family: 'Montserrat-Regular';
 }
 .cs-desc{
@@ -919,7 +919,8 @@ h5.green-text{
 .input-box, .button-submit{
     padding: 10px;
 }
-input,textarea{
+.contact-desc-ds .form input,
+.contact-desc-ds textarea{
     background-color: rgb(50, 50, 50);
     padding: 1rem;
     outline: none;
@@ -1230,4 +1231,100 @@ footer div ul li a:hover{
     footer div{
         margin: 1rem;
     }
+}
+
+.message-button i{
+    font-size: 1.5rem;
+    color: white;
+}
+.message-button{
+    cursor: pointer;
+    background-color: rgb(131, 32, 53);
+    padding: 1rem;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 4%;
+    right: -20%;
+    opacity: 0;
+    transition: .2s;
+}
+
+.live-chat{
+    position: fixed;
+    bottom: 18%;
+    right: 5%;
+    background-color: rgb(47, 88, 63);
+    width: 30%;
+    height: 70%;
+    display: none;
+    flex-direction: column;
+}
+.live-chat .live-chat-text{
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+.live-chat .live-label{
+    width: 100%;
+    position: relative;
+}
+.live-chat form .live-label input,
+.live-chat form .live-label textarea{
+    width: 90%;
+    color: white;
+    outline: none;
+    border: 1px solid rgb(207, 207, 207);
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgb(56, 105, 63);
+    margin: 10px 0;
+}
+.live-chat form{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    height: 100%;
+    background-color: rgb(56, 105, 63);
+}
+.live-submit input{
+    width: 70%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    outline: none;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    background-color: #ffffff;
+    transition: .2s;
+    cursor: pointer;
+}
+.live-submit input:hover{
+    transition: .2s;
+    color: white;
+    background-color: #a1c227;
+
+}
+.live-label span{
+    position: absolute;
+    top: 35%;
+    background-color: rgb(56, 105, 63);
+    left: 12%;
+    color: white;
+    font-family: 'Montserrat-Regular';
+    transition: .3s;
+    font-size: .7rem;
+
+}
+.live-label input:focus ~ span,
+.live-label textarea:focus ~ span,
+.live-label input:valid ~ span,
+.live-label textarea:valid ~ span{
+    transform: translateY(-20px);
+    transition: .3s;
 }
