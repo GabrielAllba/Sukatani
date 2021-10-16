@@ -557,7 +557,7 @@ main{
     background-position:bottom;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(../resources/img/josefin-HtCgLIDy-2U-unsplash\ \(1\).jpg);
+    background: black;
 }
 .founder-p img{
     width: 100%;
@@ -580,7 +580,7 @@ main{
     color: white;
 }
 h5.green-text{
-    color: #7aac79;
+    color: #a0b44f;
 }
 @media only screen and (max-width: 770px) {
     .founder-title,
