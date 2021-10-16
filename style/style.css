@@ -1275,6 +1275,7 @@ footer div ul li a:hover{
 
 .live-chat{
     position: fixed;
+    z-index: 101;
     bottom: 18%;
     right: 5%;
     background-color: rgb(47, 88, 63);
