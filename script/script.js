@@ -41,7 +41,7 @@ showSlideshow();
 
 let bottomHeader = document.getElementById('bottom-header')
 let scrollColor = document.getElementsByClassName('scroll-color')
-let sukataniText = document.getElementById('sukatani')
+let sukataniText = document.getElementsByClassName('sukatani-logo')[0]
 let messageButton = document.getElementsByClassName('message-button')[0]
 window.onscroll = () => {
     if(document.documentElement.scrollTop > 80){

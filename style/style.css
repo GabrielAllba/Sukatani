@@ -120,6 +120,26 @@ a{
 .head-dropdown div h5 a{
     color: black;
 }
+
+.sukatani-logo{
+    display: flex;
+    align-items: center;
+}
+.sukatani-logo img{
+    max-width: 100%;
+}
+.sukatani-logo h5{
+    margin-left: 1rem;
+}
+@media only screen and (max-width : 1000px){
+    #bottom-header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #1c3724;
+    }   
+   
+}
 @media only screen and (max-width: 775px){
     #bottom-header{
         display: flex;
@@ -146,6 +166,9 @@ a{
     }
     #sukatani{
         padding-top: 6px;
+    }
+    #bottom-header .sukatani-logo img{
+        display: none;
     }
 }
 
@@ -233,9 +256,7 @@ main{
       .slide-text h1{
           font-size: 2.3rem;
       }
-      #sukatani{
-          display: none;
-      }
+     
       #mn-navbar{
           justify-content: center;
       }
@@ -244,17 +265,20 @@ main{
         margin-left: 1rem; 
         max-width: 70%;
     }
-    #sukatani{
+    .sukatani-logo{
         display: flex !important;
         align-self: center;
         justify-self: flex-start;
         display: flex;
         position: absolute;
     }
+    .sukatani-logo img{
+        display: none;
+    }
 
   }
   @media only screen and (max-width: 430px) {
-    #bottom-header #sukatani{
+    #bottom-header .sukatani-logo{
         display: none;
     }
     .slide-text h1{
